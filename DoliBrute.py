@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# DoliBrute a login brute force tool with captcha bypass for Dolibarr login page.  
+# DoliBrute is a login brute force tool with captcha bypass for Dolibarr login page.  
 # Version : v0.1
 # Author : BaadMaro
 # Github : https://github.com/BaadMaro
