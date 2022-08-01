@@ -1,10 +1,11 @@
-# DoliBrute
+# What is this ?
 
 DoliBrute is a login brute force tool with captcha bypass for Dolibarr login page.
 
 # Disclaimer
 
 All information and software available on this page are for educational and authorized purposes only.
+  
 # Install and dependencies
 
 - Python version : Tested on 3.11, 3.6
