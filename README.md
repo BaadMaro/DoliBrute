@@ -1,2 +1,18 @@
 # DoliBrute
 DoliBrute a login brute force tool with captcha bypass for Dolibarr login page.
+
+# Install
+
+# Disclaimer
+
+# Example 
+
+![image](https://user-images.githubusercontent.com/72421091/182217558-a7db687a-4ed4-4f19-928e-25018e75400a.png)
+
+# To do
+
+# Kudos
+
+kudos to some exploits authors's in exploit-db. I inspired from there code  :
+- Dolibarr ERP-CRM 12.0.3 - Remote Code Execution (Authenticated) https://www.exploit-db.com/exploits/49269 
+- Dolibarr 12.0.3 - SQLi to RCE : https://www.exploit-db.com/exploits/49240
