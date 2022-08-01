@@ -11,7 +11,15 @@ All information and software available on this page are for educational and auth
 - Python version : Tested on 3.11, 3.6
 - tesseract : https://tesseract-ocr.github.io/tessdoc/Home.html#binaries
 
-Change the variable in python code for tesseract binary location
+Installation : 
+
+```
+git clone https://github.com/BaadMaro/DoliBrute
+cd DoliBrute
+pip install -r requirements.txt
+``` 
+
+Change the variable `pytesseract.pytesseract.tesseract_cmd` for tesseract binary location and OS.
 
 ```python
 # Linux
@@ -20,14 +28,6 @@ pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"
 # Windows
 pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
 ```
-
-Installation : 
-
-```
-git clone https://github.com/BaadMaro/DoliBrute
-cd DoliBrute
-pip install -r requirements.txt
-``` 
 
 
 
