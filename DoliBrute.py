@@ -99,7 +99,7 @@ def main():
 | |__| | (_) | | | |_) | |  | |_| | ||  __/
 |_____/ \___/|_|_|____/|_|   \__,_|\__\___|
   
-  DoliBrute a login brute force tool with captcha bypass for Dolibarr login page.                                        
+  DoliBrute is a login brute force tool with captcha bypass for Dolibarr login page.                                        
   V0.1
   Coded by BaadMaro
     '''
