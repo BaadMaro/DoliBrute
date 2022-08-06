@@ -41,7 +41,7 @@ def get_captcha_code(base_url):
 
 
 def auth (base_url, username, passwords):
-    login_url = base_url + "/admin/index.php?mainmenu=home"
+    login_url = base_url + "admin/index.php?mainmenu=home"
     for password in passwords:
         a = 1
         while(a==1):
