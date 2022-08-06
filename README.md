@@ -80,7 +80,7 @@ Then run all services docker-compose up -d. Now, go to http://0.0.0.0 to access 
 # To do
 
 - More clean code.
-- HTTPS support.
+- HTTPS support ( i need to test it).
 - Erros Handling.
 - Succes login test case with 302 redirection.
 - OS detection for tesseract_cmd variable.
