@@ -2,6 +2,8 @@
 
 DoliBrute is a login brute force tool with captcha bypass for Dolibarr login page.
 
+- Article : https://baadmaro.github.io/posts/Bypass-captcha-using-OCR-on-Dolibarr-login-page/
+
 # Disclaimer
 
 All information and software available on this page are for educational and authorized purposes only.
