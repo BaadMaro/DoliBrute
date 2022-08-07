@@ -113,16 +113,23 @@ def main():
       help='specify passwords list')
     parser.add_option('-u', dest='base_url', type='string',\
       help='specify base url with "/" at the end')
+    parser.add_option('--proxy', dest='proxy', type='string',\
+      help='specify proxy with IP:Port')
 
     (options, args) = parser.parse_args()
 
     username = options.username
     passwords = options.passwords
     base_url = options.base_url
-
+    proxies = options.proxy
+    
     if (username == None) | (passwords == None) | (base_url == None) :
       print(parser.usage)
       exit(0)
+        
+    if (proxies != None):
+        session.proxies = {"http": proxies, "https": proxies}
+        print(f"[Proxy] Used proxy {session.proxies}")
     
     passwords = open(passwords, "r")     
     auth(base_url, username, passwords)
