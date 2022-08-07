@@ -82,7 +82,7 @@ Then run all services docker-compose up -d. Now, go to http://0.0.0.0 to access 
 - More clean code.
 - HTTPS support ( i need to test it).
 - Erros Handling.
-- Succes login test case with 302 redirection.
+- ✅ Succes login test case with 302 redirection.
 - OS detection for tesseract_cmd variable.
 - Improve OCR detection.
 - Use a wordlist for usernames.
@@ -90,7 +90,7 @@ Then run all services docker-compose up -d. Now, go to http://0.0.0.0 to access 
 - Handle errors messages for other languages (?)
 - verbose mode
 - Threading 
-- Proxy
+- ✅ Proxy 
 
 # Kudos
 
