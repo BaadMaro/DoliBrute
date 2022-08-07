@@ -90,6 +90,7 @@ Then run all services docker-compose up -d. Now, go to http://0.0.0.0 to access 
 - Handle errors messages for other languages (?).
 - verbose mode.
 - Threading.
+- Custom User Agent.
 - ✅ Proxy support.
 
 # Kudos
