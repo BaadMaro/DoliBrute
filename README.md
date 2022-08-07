@@ -31,12 +31,41 @@ pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesserac
 
 
 
-# Example 
+# Usage
 
 ```bash
 python3 DoliBrute.py -u http://IP/ -U username -P passwords.txt
 
 ```
+
+```
+ 
+ _____        _ _ ____             _       
+|  __ \      | (_)  _ \           | |      
+| |  | | ___ | |_| |_) |_ __ _   _| |_ ___ 
+| |  | |/ _ \| | |  _ <| '__| | | | __/ _ \
+| |__| | (_) | | | |_) | |  | |_| | ||  __/
+|_____/ \___/|_|_|____/|_|   \__,_|\__\___|
+  
+  DoliBrute is a login brute force tool with captcha bypass for Dolibarr login page.                                        
+  V0.1
+  Coded by BaadMaro
+    
+Usage: 
+    python3 DoliBrute.py -u http://127.0.0.1/ -U admin -P default-passwords.txt
+
+
+Options:
+  -h, --help     show this help message and exit
+  -U USERNAME    specify username
+  -P PASSWORDS   specify passwords list
+  -u BASE_URL    specify base url with "/" at the end
+  --proxy=PROXY  specify proxy with IP:Port
+```
+
+## Example
+
+
 
 ![image](https://user-images.githubusercontent.com/72421091/182217558-a7db687a-4ed4-4f19-928e-25018e75400a.png)
 
