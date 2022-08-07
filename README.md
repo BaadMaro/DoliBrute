@@ -65,9 +65,13 @@ Options:
 
 ## Example
 
+![image](https://user-images.githubusercontent.com/72421091/183272388-cbcc96a1-2340-439d-839e-58b84d613f87.png)
 
 
-![image](https://user-images.githubusercontent.com/72421091/182217558-a7db687a-4ed4-4f19-928e-25018e75400a.png)
+With proxy
+
+![image](https://user-images.githubusercontent.com/72421091/183272309-00587d81-05ef-47e9-8b99-e3611ebb8673.png)
+
 
 # Tested versions
 
