@@ -45,7 +45,7 @@ def auth (base_url, username, passwords):
     for password in passwords:
         a = 1
         while(a==1):
-            request = session.get(login_url)
+            request = session.get(login_url, verify=False)
 
             captcha = get_captcha_code(base_url)
 
